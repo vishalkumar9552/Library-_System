@@ -98,11 +98,11 @@ class College:
             print(f" - {p}")
 
 
-# ========== Initialize College System ==========
+
 
 college = College("Institute of Engineering and Technology, Lucknow")
 
-# Add academic programs
+
 program_list = [
     "BTech CSE (SF)", "BTech CSE (AI)", "BTech CSE (R)",
     "BTech ECE", "BTech Mechanical Engineering",
@@ -112,7 +112,7 @@ program_list = [
 for name in program_list:
     college.add_program(Program(name, 75))
 
-# Add faculty members
+
 faculty_list = [
     "Dr. Arpit Katiyar", "Dr. Aditi Singh", "Dr. Ayan Verma", "Dr. Pankaj Joshi",
     "Dr. Manoj Singh", "Dr. Shivam Chauhan", "Dr. Sushant Pandey", "Dr. Kartik Nair",
@@ -121,7 +121,7 @@ faculty_list = [
 for name in faculty_list:
     college.add_faculty(Faculty(name))
 
-# Add hostels
+
 boys_hostels = [
     ("Ramanujan", "1st Year"),
     ("Aryabhatt", "2nd Year"),
@@ -141,7 +141,6 @@ for name, year in boys_hostels:
 for name, year in girls_hostels:
     college.add_hostel(Hostel(name, "Girls", year))
 
-# Add GATE qualified students
 gate_students = [
     ("Abhishek Shrivastav", 27),
     ("Ayush", 736), ("Mangesh", 907), ("Vishal", 271),
@@ -157,7 +156,7 @@ for name, rank in gate_students:
 for s in ["Varks", "Sath Phere", "While"]:
     college.add_startup(s)
 
-# Add placements
+
 placement_data = {
     "Atlassian": 5, "Adobe": 12, "Google": 3,
     "Microsoft": 3, "Amazon": 2
@@ -165,5 +164,5 @@ placement_data = {
 for company, count in placement_data.items():
     college.add_placement(Placement(company, count))
 
-# Show all info
+
 college.show_summary()
